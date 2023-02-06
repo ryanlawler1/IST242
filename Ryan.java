@@ -2,6 +2,6 @@ public class Ryan extends Enemy{
 
     public Ryan(){
 
-        super("Ryan", 100, 50);
+        super("Ryan", 100, 50,"Purple","Medium");
     }
 }
