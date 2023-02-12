@@ -1,7 +1,8 @@
 public class Ryan extends Enemy{
 
-    public Ryan(){
-
-        super("Ryan", 100, 50,"Purple","Medium");
+    private ryanMoves moves;
+    public Ryan(ryanMoves moves){
+        super("Ryan", 100, 50,);
+        this.moves = moves;
     }
 }
