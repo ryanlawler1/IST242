@@ -17,21 +17,41 @@ public class Main {
 
         Arrow pointyArrow = new Arrow();
 
-        Enemy enemy = new Enemy("Scary Enemy", 100, 50,"Color","Size");
+        Enemy enemy = new Enemy("Scary Enemy", 100, 50);
 
-        Ogre greenOgre = new Ogre();
+        Ogre greenOgre = new Ogre(Spear.poisonSpear);
 
-        Ogre redOgre = new Ogre();
+        Ogre redOgre = new Ogre(Spear.fireSpear);
 
-        Zombie slowZombie = new Zombie();
+        Zombie slowZombie = new Zombie(Bite.zombieBite);
 
-        Zombie fastZombie = new Zombie();
+        Zombie fastZombie = new Zombie(Bite.zombieBite);
 
-        Dog spotDog = new Dog();
+        Dog spotDog = new Dog(Bite.dogBite);
 
-        GiantSpider redGiantSpider = new GiantSpider();
+        GiantSpider redGiantSpider = new GiantSpider(spiderAttack.webAttack);
 
-        Ryan ryanRyan = new Ryan();
+        Ryan ryanRyan = new Ryan(ryanMoves.powerPunch);
+
+        Action action = new Action(Method.Jump, "Jump", 'j', null);
+        //New Action Class
+
+        MoveEast moveEast = new MoveEast();
+
+        MoveNorth moveNorth = new MoveNorth();
+
+        MoveSouth moveSOuth = new MoveSouth();
+
+        MoveWest moveWest = new MoveWest();
+
+        Flee flee = new Flee();
+
+        ViewInventory viewInventory = new ViewInventory();
+
+        RyanAction ryanAction = new RyanAction();
+        //Ryan Action
+
+
 
 
 
