@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class MapTile {
 
         int x;
@@ -8,6 +8,7 @@ public class MapTile {
             this.x = x;
             this.y = y;
         }
+
 
         public int hashCode() {
             final int prime = 31;
@@ -24,12 +25,28 @@ public class MapTile {
             if (getClass() != obj.getClass())
                 return false;
             MapTile other = (MapTile) obj;
+            if (x != other.x)
+                return false;
             if (y != other.y)
                 return false;
             return true;
         }
 
         public String intro_text() { throw new UnsupportedOperationException();}
+
+
+    public ArrayList<Action> adjacent_moves(){
+        ArrayList<Action> moves = new ArrayList<Action>();
+        if (World.tile_exists(x, y + 1) != null)
+        moves.add(new MoveEast());
+        if (World.tile_exists(x, y - 1) != null)
+            moves.add(new MoveWest());
+        if (World.tile_exists(x - 1, y) != null)
+            moves.add(new MoveNorth());
+        if (World.tile_exists(x + 1, y) != null)
+        moves.add(new MoveSouth());
+        return moves;
+    }
         //public void modify_player(Player player) {throw new UnsupportedOperationException();}
     }
 
