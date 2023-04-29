@@ -1,9 +1,10 @@
 public class Gold extends Item {
 
-    private int amt;
+    public int amt;
 
     public Gold(int amt){
-        super("Gold bar", String.format("A round coin with %s stamped on the front.", String.valueOf(amt)), amt);
+        super("Gold bar", String.format("A round coin that was floating in space.", String.valueOf(amt)), amt);
         this.amt = amt;
     }
 }
+

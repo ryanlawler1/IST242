@@ -3,3 +3,4 @@ public class Flee extends Action {
         super(Method.Flee, "Flee", 'f', null);
     }
 }
+

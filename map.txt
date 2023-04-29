@@ -1,0 +1,5 @@
+ 	 	 	 	FlyHomeRoom
+	MarsRoom	AlienRoom	DeepSpaceRoom	FloatingGoldRoom
+ 	 	 	DeepSpaceRoom	FloatingGoldRoom
+ 	 	 	DeepSpaceRoom	AlienRoom
+MercuryRoom	AlienRoom	EarthRoom	DeepSpaceRoom	VenusRoom

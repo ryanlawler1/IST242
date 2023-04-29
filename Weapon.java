@@ -19,4 +19,4 @@ public class Weapon extends Item{
         return String.format("{0}\n=====\n{1}\nValue: {2}\nDamage: {3}",
                 this.name, this.desc, this.value, this.damage);
     }
-    }
+}
